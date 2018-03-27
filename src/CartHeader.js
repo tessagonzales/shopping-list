@@ -1,9 +1,10 @@
 import React from 'react'
 
-const CartHeader = () => {
+const CartHeader = (props) => {
+  console.log('header props', props)
   return(
     <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
-      <p className="navbar-brand">Shopping Cart</p>
+      <p className="navbar-brand">{props.theHeader}</p>
     </nav>
   )
 }
